@@ -13,12 +13,11 @@ except:
     print(f'{numero} não é um número inteiro.')
 
 #Segundo Exercicio
-hora = input('Qual é a hora agora?')
+hora : int = input('Qual é a hora agora?') 
 #manha = 0<=hora<=11 
 #tarde = 12<=hora<=17 
 #noite = 18<=hora<=23 
 try:
-    hora = int(hora)
     manha = 0<=hora<=11 
     tarde = 12<=hora<=17 
     noite = 18<=hora<=23 
