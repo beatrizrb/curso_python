@@ -1,0 +1,90 @@
+<!--
+    Toda tag html pode receber o atributo style, o qual recebe CSS {}
+    Posso tambem em vez de fazer isso, escrever a  <style> dentro do head e ai 
+    fazer <style> h1: {} </style>
+    <b> </b> e <strong> </strong> tambem faz o texto ficar em negrito
+    a tag strong tem um significado, colocar uma palavra mais forte, por exemplo
+    se voce tiver um leitor de texto para um deficiente visual, quando tiver a 
+    tag strong, aquela palavra vai ser lida mais forte
+    <i></i> para italico
+    <em></em> tambem deixa em italico - dá enfase quando lida pelo leitor de 
+    texto
+    semantica é voce usar a tag correta no lugar correto para que todo mundo que
+    leia o seu site consiga entender o que voce escreveu da melhor maneira 
+    possivel
+    para colocar link usa <a href="link"></a>,posso colocar o link de um arquivo
+    ou um site normal. para nao abrir o link na mesma pagina que clicou, posso 
+    colocar <a href="link" target="_blank"></a>, ai abre numa nova aba
+    Posso colocar uma imagem tambem dentro do texto como 
+    <img src=""onde esta a imagem" alt="texto alternativo da imagem" 
+    width="largura" height="altura">
+    Posso tambem colocar um link na imagem se abrir antes <a>com link <img></a>
+    para riscar uma palavra como se fosse uma errata usa <del>palavra</del>
+    e se usar <ins>essa palavra aparece sublinhada</ins>
+    <s></s> tambem risca a palavra mas nao é semantico como del
+    <u></u> tambem sublinha mas ''' como ins
+    <small></small> texto fica menor,
+    Para colocar a palavra subscrita como o elevador usa <sup></sup>
+    No caso para deixado abaixodo como em H2O usa <sub></sub>
+    Para quebrar a linha usa <br>
+    para citar (colocar aspas) usa <q cite="coloca o link">texto citado</q>
+    Para fazer um bloco de citação usa <blockquote cite=""></blockquote>
+    O blockquote nao pode estar dentro do paragrado <p> mas voce pode ter um <p>
+    dentro dop blockquote
+    <hr> faz uma linha horizontal que separa os textos
+    blocos ocupam o espaço inteiro como <hr>
+    Para citar nomes de codigos posso usar a tag <code>codigo</code>
+    Para colocar a estrutura do codigo usa primeiro <pre><code></code></pre>
+    Esse pre é de um texto pre-formatado
+    <span></span> é um container generico inline, posso colocar essa tag para 
+    configura uma coisa que nao precisa ser lida pelo leitor como colocar 
+    em vermelho o texto
+    <div> </div> tag generico que é um bloco
+    <ul></ul> é lista nao ordenada e <li> sao as bolinhas na lista
+    <ol><li>os numeros</li></ol> ol é lista ordenada
+
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .img {
+            width: 200px;
+            height: 200px;
+        }
+
+        .vermelho {
+            color: red;
+            font-size: 44px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Este é o meu html</h1>
+    <p>
+        <img class="img"
+            src="https://akns-images.eonline.com/eol_images/Entire_Site/2023218/rs_1200x1200-230318100631-1200-The-Eras-Tour-taylor-swift-3.cm.31823.jpg?fit=around%7C1080:1080&output-quality=90&crop=1080:1080;center,top"
+            alt=""> <br>
+        Entao, estou aprendendo html <br> pela <a href="https://www.udemy.com/pt/" target="_blank">
+            Udemy</a>
+        <span class="vermelho">H<sub>2</sub>O</span>
+
+    </p>
+    <ul>
+        <li>1 elemento</li>
+        <li>2 elemento</li>
+        <li>3 elemento</li>
+
+
+    </ul>
+    <div class="vermelho">Eu sou um bloco</div>
+</body>
+
+</html>

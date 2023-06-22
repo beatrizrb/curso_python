@@ -15,6 +15,13 @@
     para validar o seu html use o site 
     https://validator.w3.org/
     lang é linguagem (en para ingles e pt-BR para portugues)
+
+    <b> deixa em negrito (bold)
+    se eu colocar diferentes configuraçoes de background para um mesmo elemento
+    o que vai prevalecer é o ultimo, porque estes possuem a mesma especificidade
+    Se eu quiser dar preferencia para um, pode colocar ele no final com 
+    !important mas isso não é recomendavel
+    Se voce quer selecionar varios elementos, selecione a classe no style
 -->
 
 <!doctype html>
@@ -23,11 +30,26 @@
 <head>
     <meta charset="utf-8">
     <title>Meu HTML</title>
+    <style>
+        #oi {
+            background: pink !important
+        }
+
+        #oi {
+            background: blue;
+        }
+
+
+        .Essa-a-classe {
+            background: red;
+        }
+    </style>
 </head>
 
 <body>
-    <p>
-        Olá, hahaah!
+    <h1 class="Essa-a-classe">Esse é o cabecalho</h1>
+    <p id="oi">
+        Olá, <b>oioioioi</b> hahaah!
     </p>
 </body>
 
